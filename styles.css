@@ -1,0 +1,18 @@
+h1{
+  font-size: 4rem;
+  padding-bottom:50px;
+  color: #0d6efd;
+}
+
+.container{
+  margin-bottom: 50px;
+}
+
+.endPoint{
+  margin-bottom: 50px;
+}
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+}

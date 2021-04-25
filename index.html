@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<title>Mock Location WebApp</title>
+<body class="container">
+
+<h1 id="title">Mock Location Map</h1>
+<div class="row">
+  <div class="col-md-4">
+    <div class="startPoint">
+      <h3>Start Point Coordinates</h3>
+      <p id="startCoordinates"></p>
+    </div>
+    <div class="endPoint">
+      <h3>End Point Coordinates</h3>
+      <p id="endCordinates"></p>
+    </div>
+    <h3 class="totalDistance">Total Distance: <span style="color:#0d6efd;"></span></h3>
+    <h3 class="totalTime">ETA(in real conditions): <span style="color:#0d6efd;"></span></h3>
+    <h3 class="speedDisplay">Speed: <span style="color:#0d6efd;"></span></h3>
+    <h3 class="journeyCompleted">Journey Completed: <span style="color:#0d6efd;"></span></h3>
+
+
+    <div class="speedInputs">
+      <label for="speed">Enter the desired speed: (in km/hr)</label>
+      <input id="speed" type="text" name="" value="" placeholder="40 km/hr">
+      <button class="btn btn-primary" type="button" name="button">Start route</button>
+    </div>
+
+  </div>
+  <div class="col-md-8 border border-dark">
+    <div id="googleMap" style="width:100%;height:620px;"></div>
+  </div>
+
+
+</div>
+
+<footer>
+  <p>Made by Gaurav 🐱‍👤</p>
+</footer>
+
+<script src="index.js" charset="utf-8"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- REPLACE "API_KEY" WITH API KEY -->
+<script async src="https://maps.googleapis.com/maps/api/js?key="API_KEY"&callback=myMap"></script>
+
+
+</body>
+</html>
