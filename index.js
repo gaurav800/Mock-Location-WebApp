@@ -1,11 +1,10 @@
-
 function myMap() {
 
 //Hiding the journey completed element
   $(".journeyCompleted").hide();
 
   //INSERT API KEY AS A STRING
-  var apiKey = "API_KEY";
+  var apiKey = "AIzaSyCF72Xcgx76jErt3I1cSBuT52eeUb5vnzI";
 ;
 
 //Initialising all the variables and objects
@@ -185,7 +184,13 @@ function myMap() {
   function animateCircle(polyline) {
     $(".journeyCompleted").show()
     var count = 0;
-    var distanceInMetres = (distance.split(" ")[0]) * 1000;
+    var distanceInMetres;
+    if (distance.split(" ")[1]==="km"){
+      distanceInMetres = (distance.split(" ")[0]) * 1000;
+    }
+    else{
+      distanceInMetres = (distance.split(" ")[0]);
+    }
     var metricSpeed = speed * 5 / 18;
     var time = distanceInMetres / metricSpeed;
     var factor = (100 / time) / 10;
@@ -211,16 +216,4 @@ function myMap() {
       }
     }, 100);
   }
-
-
-
-
-
-
-
-
-
-
-
-
 }
