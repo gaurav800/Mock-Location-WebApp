@@ -4,7 +4,7 @@ function myMap() {
   $(".journeyCompleted").hide();
 
   //INSERT API KEY AS A STRING
-  var apiKey = "AIzaSyCF72Xcgx76jErt3I1cSBuT52eeUb5vnzI";
+  var apiKey = "API_KEY";
 ;
 
 //Initialising all the variables and objects
