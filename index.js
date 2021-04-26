@@ -5,15 +5,15 @@ function myMap() {
 
   //INSERT API KEY AS A STRING
   var apiKey = "API_KEY";
-;
 
 //Initialising all the variables and objects
   var directionsService = new google.maps.DirectionsService();
   var lineSymbol = {
-    path: google.maps.SymbolPath.CIRCLE,
-    scale: 5,
+    path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+    scale: 3,
     strokeColor: '#0d6efd',
-    strokeWidth: '#0d6efd'
+    fillColor: '#0d6efd',
+    fillOpacity: 1
   };
 
   var speed = 40;
@@ -26,7 +26,6 @@ function myMap() {
   var start = "";
   var destination = "";
   var legCoordinates = [];
-  var polylines = [];
   var snappedCoordinates = [];
 
   alert("Click on the map to initilize Start and End points");
@@ -171,12 +170,11 @@ function myMap() {
     var snappedPolyline = new google.maps.Polyline({
       path: snappedCoordinates,
       strokeColor: '#687980',
-      strokeWeight: 4,
+      strokeWeight: 3,
       strokeOpacity: 0.9,
     });
     snappedPolyline.setMap(map);
     animateCircle(snappedPolyline);
-    polylines.push(snappedPolyline);
   }
 
 
