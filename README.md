@@ -10,5 +10,4 @@ Places to change API_Key: index.html - line 50 and index.js line 8
 
 
 ![1](https://user-images.githubusercontent.com/47393893/116004350-f7694380-a61f-11eb-8e4e-a52cb2ae2985.png)
-![2](https://user-images.githubusercontent.com/47393893/116004359-07812300-a620-11eb-94f9-5e4b1cbe166c.png)
-
+![2](https://user-images.githubusercontent.com/47393893/116622799-df1c6000-a962-11eb-9e63-c056033c1b2d.png)
